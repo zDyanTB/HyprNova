@@ -1,0 +1,89 @@
+/* pywal-wlogout */
+
+/* Importing pywal colors */
+
+@import '../../.cache/wal/colors-waybar.css';
+
+window {
+    font-family: Fira Code Medium;
+    font-size: 16pt;
+    color:  #cdd6f4; /* text */
+    /* background-image: url("/tmp/shot_blurred.png");
+    background-repeat: no-repeat;
+    background-position: center;
+*/
+    background-color: rgba(24, 27, 32, 0.4);
+
+} 
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-color: rgba(24, 27, 32, 0.8);
+    margin: 5px;
+    animation: gradient_f 20s ease-in infinite;
+    border-radius: 30px;
+    
+}
+
+button:focus {
+    background-size: 20%;
+}
+
+button:hover {
+    background-color: @color6;
+    color: @background;
+    background-size: 50%;
+    margin: 40px;
+    border-radius: 50px; 
+    transition: all 0.4s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0px 9px 30px @color6;
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+    background-image: image(url("./icons/lock-hover.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+}
+#logout:hover {
+    background-image: image(url("./icons/logout-hover.png"));
+}
+
+#suspend {
+    background-image: image(url("./icons/sleep.png"));
+}
+#suspend:hover {
+    background-image: image(url("./icons/sleep-hover.png"));
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+    background-image: image(url("./icons/power-hover.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover {
+    background-image: image(url("./icons/restart-hover.png"));
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+    background-image: image(url("./icons/hibernate-hover.png"));
+}
