@@ -5,7 +5,15 @@
 
 ## Sys apps
 - Wlogout
+
+  How to change the layout?
+
+  Choose your layout between vertical(6x1) and horizontal(3x2).
   
+  ```console
+  ln -srf <layout>.css ~/.config/wlogout
+  ```
+
   There are two ways you can apply *blur* to Wlogout.
   
   * The simple way:
@@ -30,8 +38,6 @@
     grim - | convert - -scale 2.5% -resize 4000% /tmp/shot_blurred.png
     ```
     using [grim](https://github.com/emersion/grim).
- 
-    i.e: *TODO*
 
     This way, whenever you open wlogout, it will take a screenshot and 'blur' it.  
     I've tested and I noticed that it takes too much time to render, prefer method 1.
