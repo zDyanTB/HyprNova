@@ -1,0 +1,118 @@
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* pywal-wlogout */
+
+/* Importing pywal colors */
+
+@import '../../.cache/wal/colors-waybar.css';
+
+window {
+    font-family: Fira Code Medium;
+    font-size: 16pt;
+    color:  #cdd6f4; /* text */
+    /*
+    background-image: url("/tmp/shot_blurred.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+    background-color: rgba(24, 27, 32, 0.1);
+
+} 
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-color: rgba(24, 27, 32, 0.8);
+    margin: 0px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+button:focus {
+    background-size: 20%;
+}
+
+button:hover {
+    background-color: @color6;
+    color: @background;
+    background-size: 30%;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.3s ease-in-out, background-color 0.4s ease-in-out;
+    box-shadow: 0px 9px 50px @color6;
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+    border-radius: 50px 0px 0px 0px;
+    margin: 50px 0px 0px 50px;
+}
+#shutdown:hover {
+    background-image: image(url("./icons/power-hover.png"));
+    border-radius: 50px 50px 0px 50px;
+    margin: 0px 0px 0px 0px;
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+    border-radius: 0px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
+}
+#logout:hover {
+    background-image: image(url("./icons/logout-hover.png"));
+    border-radius: 50px 50px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+#suspend {
+    background-image: image(url("./icons/sleep.png"));
+    border-radius: 0px 50px 0px 0px;
+    margin: 50px 50px 0px 0px;
+}
+#suspend:hover {
+    background-image: image(url("./icons/sleep-hover.png"));
+    margin: 0px 0px 0px 0px;
+    border-radius: 50px 50px 50px 0px;
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+    border-radius: 0px 0px 0px 50px;
+    margin: 0px 0px 50px 50px;
+}
+#reboot:hover {
+    background-image: image(url("./icons/restart-hover.png"));
+    margin: 0px 0px 0px 0px;
+    border-radius: 50px 0px 50px 50px;
+}
+
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+    border-radius: 0px 0px 0px 0px;
+    margin: 0px 0px 50px 0px;
+}
+#lock:hover {
+    background-image: image(url("./icons/lock-hover.png"));
+    border-radius: 0px 0px 50px 50px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+    border-radius: 0px 0px 50px 0px;
+    margin: 0px 50px 50px 0px;
+
+}
+#hibernate:hover {
+    background-image: image(url("./icons/hibernate-hover.png"));
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px 50px 50px 50px;
+
+}
