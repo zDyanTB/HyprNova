@@ -1,0 +1,62 @@
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* pywal-wlogout */
+
+/* Importing pywal colors */
+
+@import '../../.cache/wal/colors-waybar.css';
+
+window {
+    font-family: Fira Code Medium;
+    font-size: 16pt;
+    color:  #cdd6f4; /* text */
+    /*
+    background-image: url("/tmp/shot_blurred.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+    background-color: rgba(24, 27, 32, 0.2);
+
+} 
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-color: rgba(23, 25, 27, 0);
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+}
+
+button:focus {
+    box-shadow: none;
+}
+
+button:hover {
+    background-size: 50%;
+    color: @background;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
