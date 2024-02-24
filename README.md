@@ -7,7 +7,8 @@
   <a href="https://github.com/zDyanTB/HyprNova/blob/master/documentation.md">Check out the documentation!</a>
 </h4>
 
-You need pywal to work!
+>   [!Caution]
+>   Requires [pywal](https://github.com/dylanaraps/pywal) to work
 
 # Screenshots
 <details>
