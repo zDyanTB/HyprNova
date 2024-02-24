@@ -4,7 +4,7 @@
   Dot files for my Fedora with Hyprland
 </h2>
 
-<h4 align="center">[Check out the documentation!](https://github.com/zDyanTB/HyprNova/blob/master/documentation.md)</h4>
+<h4 align="center">![Check out the documentation!](https://github.com/zDyanTB/HyprNova/blob/master/documentation.md)</h4>
 
 # TODO
 ---
