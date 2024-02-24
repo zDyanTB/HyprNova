@@ -6,6 +6,23 @@
 <h4 align="center">
   <a href="https://github.com/zDyanTB/HyprNova/blob/master/documentation.md">Check out the documentation!</a>
 </h4>
+
+You need pywal to work!
+
+# Screenshots
+<details>
+<summary> Rofi </summary>
+  
+![Space-menu](src/rofi/space-menu.png)
+  
+![Space-layout](src/rofi/space-layout.png)
+
+![Flower-menu](src/rofi/flower-menu.png)
+
+![Eye-menu](src/rofi/eye-menu.png)
+
+
+</details>
   
 # TODO
 - [ ] Add the rest of keybinds
