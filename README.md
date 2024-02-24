@@ -1,9 +1,10 @@
 <h2 align="center">
   <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/src/nova-banner.png" alt="Logo"/><br/>
-  HyprNova
+  HyprNova<br/>
   Dot files for my Fedora with Hyprland
 </h2>
 
+<h4 align="center">[Check out the documentation!](https://github.com/zDyanTB/HyprNova/blob/master/documentation.md)</h4>
 
 # TODO
 ---
