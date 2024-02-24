@@ -4,7 +4,31 @@
 ## User apps
 
 ## Sys apps
-- Wlogout
+
+<details>
+<summary> Rofi </summary>
+  Your themes go on `rofi/themes` and your colors in `rofi/colors`
+  
+  Put the location of the main theme in the `rofi/config.rasi`, i.e:  
+  
+
+  ```console
+    @theme "~/.config/rofi/themes/nova-dark.rasi"
+  ```
+
+  To use your wallpaper, you need to specify the path as well:
+
+  In `rofi/` create a symlink to the wallpaper and name it `.current_wallpaper`.
+  
+  
+  ---
+</details>
+
+
+
+
+<details>
+<summary> Wlogout </summary>
 
   How to change the layout?
 
@@ -41,3 +65,6 @@
 
     This way, whenever you open wlogout, it will take a screenshot and 'blur' it.  
     I've tested and I noticed that it takes too much time to render, prefer method 1.
+
+  ---
+</details>
