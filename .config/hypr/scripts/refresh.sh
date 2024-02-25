@@ -26,19 +26,9 @@ sleep 0.2
 # Relaunch waybar
 waybar &
 
-# Update spicetify colors
-$scriptsDir/refreshSpiceify.sh
-
 # relaunch swaync
-sleep 0.5
+sleep 0.2
 swaync > /dev/null 2>&1 &
-
-# Relaunching rainbow borders if the script exists
-sleep 1
-if file_exists "${UserScripts}/RainbowBorders.sh"; then
-    ${UserScripts}/RainbowBorders.sh &
-fi
-
 
 # for cava-pywal (note, need to manually restart cava once wallpaper changes)
 ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
