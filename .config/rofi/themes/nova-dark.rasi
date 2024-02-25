@@ -22,9 +22,9 @@ configuration {
 * {
 
     background-alt:              @selected-active-background; // Buttons background
-    selected:                    @selected-normal-background; // Button selected
-    active:                      @selected-urgent-background; // Window activated
-    urgent:                      @selected-normal-background; // When hovering the activated window (maybe more?)
+    selected:                    @selected-urgent-background; // Button selected
+    active:                      @selected-normal-background; // Window activated
+    urgent:                      @selected; // When hovering the activated window (maybe more?)
 
     text-selected:               @background;
     text-color:                  @foreground;
