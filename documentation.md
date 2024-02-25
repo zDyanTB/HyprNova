@@ -1,12 +1,27 @@
 <h1 align=center>Documentation</h1>
 <h3 align=center>for my dotfiles and how to configure them</h3>
 
+>   [!Note]
+>   Some themes require that your wallpapers go on `~/Pictures/wallpapers`
+
 ## User apps
 
 ## Sys apps
+  
+  
+<details>
+  <summary> Waybar </summary>
+  Your themes go on `waybar/themes` and your colors in `waybar/colors`<br>
+
+  **Do not delete `config` and `style.css` files!**
+
+  Use `WallpaperSelect` and `WallpaperRandom` scripts to change your wallpaper.
+
+  ---   
+</details>
 
 <details>
-<summary> Rofi </summary>
+  <summary> Rofi </summary>
   Your themes go on `rofi/themes` and your colors in `rofi/colors`
   
   Put the location of the main theme in the `rofi/config.rasi`, i.e:  
@@ -23,9 +38,6 @@
   
   ---
 </details>
-
-
-
 
 <details>
 <summary> Wlogout </summary>
