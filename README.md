@@ -1,5 +1,6 @@
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/src/nova-banner.png" alt="Logo"/><br/>
+  <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/src/nova-banner.png" alt="Logo"/><br><br>
+
   Dot files for my Fedora with Hyprland
 </h2>
 
@@ -13,14 +14,24 @@
 # Screenshots
 <details>
 <summary> Rofi </summary>
-  
-![Space-menu](src/rofi/space-menu.png)
-  
-![Space-layout](src/rofi/space-layout.png)
 
-![Flower-menu](src/rofi/flower-menu.png)
+<h4 align="center"> Menu </h4>
+
+![Space-menu](src/rofi/space-menu.png)
+
+![Flower-menu](src/rofi/flower-menu.png)  
 
 ![Eye-menu](src/rofi/eye-menu.png)
+
+
+<h4 align="center"> Waybar Layouts </h4>
+
+![Space-layout](src/rofi/space-layout.png)
+
+
+<h4 align="center"> Wallpaper Selector </h4>
+
+![Wallpapers](src/rofi/wallpaper-select.png)
 
 
 </details>
