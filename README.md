@@ -37,6 +37,10 @@
 </details>
   
 # TODO
+
+- [ ] Add hyprlock dot files
+- [ ] Do spicetify live update
+- [ ] Create discord dynamic color
 - [ ] Switch to hylock-idle
 - [ ] Add the rest of keybinds
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
