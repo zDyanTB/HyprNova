@@ -3,15 +3,16 @@
 /* ---- Configuration ---- */
 
 configuration {
-	modi:                       "drun,run,filebrowser,window";
+    modi:                       "drun,run";
+    font:                       "JetBrains Mono Nerd Font 10";
     show-icons:                 true;
-    display-drun:               "Apps";
-    display-run:                "Run";
-    display-filebrowser:        "Files";
-    display-window:             "Windows";
 	drun-display-format:        "{name}";
-	window-format:              "{w} · {c} · {t}";
-    font:                        "JetBrains Mono Nerd Font 10";
+    hover-select:               true;
+    me-select-entry:            "MouseSecondary";
+    me-accept-entry:            "MousePrimary";
+    window-format:              "{w} · {c} · {t}";
+	dpi:						1;
+    
 }
 
 /* ---- Load pywal colors ---- */
@@ -79,7 +80,7 @@ entry {
     border-color:               @background-alt;
     text-color:                 inherit;
     cursor:                     text;
-    placeholder:                " 󰮫  Choose Waybar Layout";
+    placeholder:                "   Choose Waybar Layout";
     placeholder-color:          inherit;
 }
 

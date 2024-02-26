@@ -5,10 +5,6 @@ configuration {
     modi:                       "drun,run";
     font:                       "JetBrains Mono Nerd Font 10";
     show-icons:                 true;
-    display-drun:               "";
-	display-run:                "";
-    display-filebrowser:        "";
-    display-window:             "";
 	drun-display-format:        "{name}";
     hover-select:               true;
     me-select-entry:            "MouseSecondary";
@@ -55,30 +51,33 @@ window {
 /* ----- Main Box ----- */
 mainbox {
     enabled:                     true;
-    orientation:                 vertical;
-    children:                    [ "inputbar", "listbox" ];
+    orientation:                 horizontal;
+    children:                    [  "img" ,"listbox"];
     background-color:            transparent;
 }
 
-/* ---- Inputbar ---- */
-inputbar {
+/* ---- img ---- */
+img {
     enabled:                    true;
-    padding:                    80px 60px;
-    margin:                     20px;
-    border-radius:              30px;
-	background-color:			transparent;
-    children:                   [ "entry" ];
-    background-image:           url("~/.config/rofi/.current_wallpaper", width);
+    padding:                    60px 120px;
+    margin:                     10px;
+    background-color:           transparent;
+    border-radius:              26px;
+    background-image:           url("~/.config/rofi/.current_wallpaper", height);
+    orientation:                horizontal;
 }
 
 entry {
     enabled:                    true;
-    padding:                    12px 16px;
-    border-radius:              10px;
-    background-color:           @background-alt;
+    expand:                     false;
+    padding:                    10px;
+    border-radius:              12px;
+    border:                     2px;
+    background-color:           transparent;
+    border-color:               @background-alt;
     text-color:                 inherit;
     cursor:                     text;
-    placeholder:                " 󰮫  Choose Waybar Style";
+    placeholder:                "   Choose Waybar Colors";
     placeholder-color:          inherit;
 }
 
@@ -94,7 +93,7 @@ listbox {
     padding:                     20px;
     background-color:            transparent;
     orientation:                 vertical;
-    children:                    [ "message", "listview" ];
+    children:                    [ "entry", "message", "listview" ];
 }
 
 /* ---- Listview ---- */
@@ -126,12 +125,12 @@ dummy {
 
 /* ---- Elements ---- */
 element {
-    enabled:                     true;
-    spacing:                     10px;
-    padding:                     4px;
-    border-radius:               10px;
-    background-color:            transparent;
-    cursor:                      pointer;
+    enabled:                    true;
+    padding:                    5px;
+    margin:                     2px;
+    cursor:                     pointer;
+    background-color:           transparent;
+    border-radius:              10px;
 }
 
 element normal.normal {

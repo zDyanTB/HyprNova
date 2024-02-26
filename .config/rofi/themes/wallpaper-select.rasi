@@ -3,16 +3,14 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                        "drun";
+    font:                        "JetBrains Mono Nerd Font 10";
     show-icons:                  true;
-    drun-display-format:         "{name}";
-    font:                        "JetBrainsMono Nerd Font 10";
 	drun-display-format:         "{name}";
     hover-select:                true;
     me-select-entry:             "MouseSecondary";
     me-accept-entry:             "MousePrimary";
     window-format:               "{w} · {c} · {t}";
 	dpi:						 1;
-    font:                        "JetBrains Mono Nerd Font 10";
 }
 
 /* ---- Load pywal colors ---- */
