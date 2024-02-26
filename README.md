@@ -37,9 +37,11 @@
 </details>
   
 # TODO
+- [ ] Switch to hylock-idle
 - [ ] Add the rest of keybinds
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
 - [ ] Make wallpaperSelect.sh recursive (look into subdirectories)
+- [x] Add waybar dotfiles
 - [x] Improve rofi color scheme
 - [x] Adapt all rofi styles
 - [x] Change wlogout layout to 3x2
