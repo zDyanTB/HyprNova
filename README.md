@@ -5,11 +5,16 @@
 </h2>
 
 <h4 align="center">
-  <a href="https://github.com/zDyanTB/HyprNova/blob/master/documentation.md">Check out the documentation!</a>
-</h4>
+  <a href="https://github.com/zDyanTB/HyprNova/blob/master/documentation.md">Check out the documentation!</a><br><br>
+  
+  <a href="https://github.com/zDyanTB/aesthic-wallpapers">My wallpapers!</a>
+  </h4>
 
 >   [!Caution]
 >   Requires [pywal](https://github.com/dylanaraps/pywal) to work
+
+# Features
+  -  [W.I.P] Fully dynamic colors
 
 # Screenshots
 <details>
@@ -35,7 +40,20 @@
 
 
 </details>
-  
+
+<details>
+<summary> Waybar </summary>
+
+![Castle-shot](src/waybar/shot-castle.png)
+![Castle-bar](src/waybar/bar-castle.png)
+---
+![Space-shot](src/waybar/shot-space.png)
+![Space-bar](src/waybar/bar-space.png)
+---
+![Flower-shot](src/waybar/shot-flower.png)
+![Flower-bar](src/waybar/bar-flower.png)
+---
+</details>
 # TODO
 
 - [ ] Add hyprlock dot files
@@ -44,7 +62,7 @@
 - [ ] Switch to hylock-idle
 - [ ] Add the rest of keybinds
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
-- [ ] Make wallpaperSelect.sh recursive (look into subdirectories)
+- [x] Make wallpaperSelect.sh recursive (look into subdirectories)
 - [x] Add waybar dotfiles
 - [x] Improve rofi color scheme
 - [x] Adapt all rofi styles
