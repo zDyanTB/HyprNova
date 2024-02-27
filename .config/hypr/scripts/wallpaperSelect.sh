@@ -2,49 +2,76 @@
 ## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # This script for selecting wallpapers (SUPER W)
 
+# Scripts Path
 scriptsDir="$HOME/.config/hypr/scripts"
 
-
-# WALLPAPERS PATH
-wallDIR="$HOME/Pictures/wallpapers"
+# Wallpapers Path
+wallpaperDir="$HOME/Pictures/wallpapers"
+themesDir="$HOME/.config/rofi/themes"
 
 # Transition config
 FPS=60
-TYPE="random"
+TYPE="center"
 DURATION=2
 BEZIER=".43,1.19,1,.4"
-SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION"
+SWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
 
 # Check if swaybg is running
 if pidof swaybg > /dev/null; then
   pkill swaybg
 fi
 
-# Retrieve image files
-PICS=($(ls "${wallDIR}" | grep -E ".jpg$|.jpeg$|.png$|.gif$"))
-RANDOM_PIC="${PICS[$((RANDOM % ${#PICS[@]}))]}"
-RANDOM_PIC_NAME="${#PICS[@]}. random"
+# Retrieve image files as a list
+PICS=($(find "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \)))
+
+# Use date variable to increase randomness
+randomNumber=$(( ($(date +%s) + RANDOM) + $$ ))
+randomPicture="${PICS[$(( randomNumber % ${#PICS[@]} ))]}"
+randomChoice="[${#PICS[@]}] Random"
 
 # Rofi command
-rofi_command="rofi -show -dmenu -theme $HOME/.config/rofi/themes/wallpaper-select.rasi"
+rofiCommand="rofi -show -dmenu -theme ${themesDir}/wallpaper-select.rasi"
 
-menu() {
-  for i in "${!PICS[@]}"; do
-    # Displaying .gif to indicate animated images
-    if [[ -z $(echo "${PICS[$i]}" | grep .gif$) ]]; then
-      printf "$(echo "${PICS[$i]}" | cut -d. -f1)\x00icon\x1f${wallDIR}/${PICS[$i]}\n"
-    else
-      printf "${PICS[$i]}\n"
-    fi
-  done
+# Execute command according the wallpaper manager
+executeCommand() {
 
-  printf "$RANDOM_PIC_NAME\n"
+  if command -v swww &>/dev/null; then
+    swww img "$1" ${SWWW_PARAMS}
+
+  elif command -v swaybg &>/dev/null; then
+    swaybg -i "$1" &
+  
+  else
+    echo "Neither swww nor swaybg are installed."
+    exit 1
+  fi
 }
 
-swww query || swww init
+# Show the images
+menu() {
 
+  printf "$randomChoice\n"
+
+  for i in "${!PICS[@]}"; do
+  
+    # If not *.gif, display
+    if [[ -z $(echo "${PICS[$i]}" | grep .gif$) ]]; then
+      printf "$(basename "${PICS[$i]}" | cut -d. -f1)\x00icon\x1f${PICS[$i]}\n"
+    else
+    # Displaying .gif to indicate animated images
+      printf "$(basename "${PICS[$i]}")\n"
+    fi
+  done
+}
+
+# If swww exists, start it
+if command -v swww &>/dev/null; then
+  swww query || swww init
+fi
+
+# Execution
 main() {
-  choice=$(menu | ${rofi_command})
+  choice=$(menu | ${rofiCommand})
 
   # No choice case
   if [[ -z $choice ]]; then
@@ -52,23 +79,25 @@ main() {
   fi
 
   # Random choice case
-  if [ "$choice" = "$RANDOM_PIC_NAME" ]; then
-    swww img "${wallDIR}/${RANDOM_PIC}" $SWWW_PARAMS
-    exit 0
+  if [ "$choice" = "$randomChoice" ]; then
+    executeCommand "${randomPicture}"
+    return 0
   fi
 
-  # Find the index of the selected file
-  pic_index=-1
-  for i in "${!PICS[@]}"; do
-    filename=$(basename "${PICS[$i]}")
-    if [[ "$filename" == "$choice"* ]]; then
-      pic_index=$i
+  # Find the selected file
+  for file in "${PICS[@]}"; do
+  # Getting the file
+    if [[ "$(basename "$file" | cut -d. -f1)" = "$choice" ]]; then
+      selectedFile="$file"
       break
     fi
   done
 
-  if [[ $pic_index -ne -1 ]]; then
-    swww img "${wallDIR}/${PICS[$pic_index]}" $SWWW_PARAMS
+
+  # Check the file and execute
+  if [[ -n "$selectedFile" ]]; then
+    executeCommand "${selectedFile}"
+    return 0
   else
     echo "Image not found."
     exit 1
@@ -83,7 +112,8 @@ fi
 
 main
 
+# Sleep to work properly
 sleep 0.2
-${scriptsDir}/pywalSwww.sh
+"${scriptsDir}"/pywalSwww.sh
 sleep 0.2
-${scriptsDir}/refresh.sh
+"${scriptsDir}"/refresh.sh
