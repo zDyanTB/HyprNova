@@ -54,14 +54,26 @@
 ![Flower-bar](src/waybar/bar-flower.png)
 ---
 </details>
+
+
+<details>
+<summary> Hyprlock </summary>
+
+![Girl](src/hyprlock/girl.png)
+![seahorse](src/hyprlock/seahorse.png)
+![space](src/hyprlock/space.png)
+
+</details>
+
 # TODO
 
-- [ ] Add hyprlock dot files
+- [ ] Adapt hyprlock theming to fit the wallpaper
 - [ ] Do spicetify live update
 - [ ] Create discord dynamic color
 - [ ] Switch to hylock-idle
 - [ ] Add the rest of keybinds
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
+- [x] Add hyprlock dot files
 - [x] Make wallpaperSelect.sh recursive (look into subdirectories)
 - [x] Add waybar dotfiles
 - [x] Improve rofi color scheme
