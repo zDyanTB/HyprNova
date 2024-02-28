@@ -40,6 +40,15 @@
 </details>
 
 <details>
+<summary> Hyprlock </summary>
+
+  <h3> note that hyprlock only supports .png for now! </h3>
+
+  Simply copy `hyprlock.conf` to your `~/.config/hypr/`
+
+</details>
+
+<details>
 <summary> Wlogout </summary>
 
   How to change the layout?
