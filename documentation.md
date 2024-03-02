@@ -49,6 +49,14 @@
 </details>
 
 <details>
+<summary> Swaync </summary>
+  Notifications theme go on swaync/themes/`theme`/notifications.css
+  Control center theme go on swaync/themes/`theme`/control_center.css
+
+</details>
+
+
+<details>
 <summary> Wlogout </summary>
 
   How to change the layout?
