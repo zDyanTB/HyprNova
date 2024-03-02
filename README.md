@@ -67,6 +67,8 @@
 
 # TODO
 
+
+- [ ] Tweak swaync theme
 - [ ] Adapt hyprlock theming to fit the wallpaper
 - [ ] Do spicetify live update
 - [ ] Create discord dynamic color
