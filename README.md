@@ -64,21 +64,31 @@
 <summary> Hyprlock </summary>
 
 ![Girl](src/hyprlock/girl.png)
-![seahorse](src/hyprlock/seahorse.png)
-![space](src/hyprlock/space.png)
+![Seahorse](src/hyprlock/seahorse.png)
+![Space](src/hyprlock/space.png)
+
+</details>
+
+<details>
+<summary> Swaync </summary>
+
+![Shot1](src/swaync/shot-1.png)
+![Shot2](src/swaync/shot-2.png)
+![Shot3](src/swaync/shot-3.png)
+![Shot4](src/swaync/shot-4.png)
+
 
 </details>
 
 # TODO
 
-
-- [ ] Tweak swaync theme
 - [ ] Adapt hyprlock theming to fit the wallpaper
 - [ ] Do spicetify live update
 - [ ] Create discord dynamic color
 - [ ] Switch to hylock-idle
 - [ ] Add the rest of keybinds
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
+- [x] Tweak swaync theme
 - [x] Add hyprlock dot files
 - [x] Make wallpaperSelect.sh recursive (look into subdirectories)
 - [x] Add waybar dotfiles
