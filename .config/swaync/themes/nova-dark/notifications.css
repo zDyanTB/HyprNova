@@ -12,7 +12,7 @@
   /*urgent:                @color6;      Urgency critical */
   /*text-selected:         @background; */
 
-  color:            @text;
+  color: @text;
 
   all: unset;
   font-size: 14px;
@@ -28,7 +28,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background: @background;
+  background: alpha(@background, .55);
   box-shadow: 0 2px 8px 0 @background;
   border: 1px solid @selected;
   border-radius: 12px;
@@ -55,7 +55,7 @@
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
   border-radius: 8px;
-  background-color: @background-alt;
+  background-color: @background-alt ;
   margin: 6px;
   border: 1px solid transparent;
 }
@@ -72,7 +72,6 @@
 
 .image {
   margin: 10px 20px 10px 0px;
-
 }
 
 .summary {
@@ -88,13 +87,12 @@
   margin: 6px;
   padding: 2px;
   border-radius: 6px;
-  background-color: @background-alt;
+  background-color: transparent;
   border: 1px solid transparent;
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:hover {
-  background-color: @hover;
-  border: 1px solid @selected;
+  background-color: @selected;
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:active {

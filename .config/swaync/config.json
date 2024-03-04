@@ -47,10 +47,10 @@
     "title": {
       "text": "Notifications",
       "clear-all-button": true,
-      "button-text": "Clear All"
+      "button-text": " 󰎟 "
     },
     "dnd": {
-      "text": "Do Not Disturb"
+      "text": "Do not disturb"
     },
     "label": {
       "max-lines": 1,
@@ -67,6 +67,14 @@
     "buttons-grid": {
       "actions": [
         {
+          "label": "󰕾",
+          "command": "amixer set Master toggle"
+        },
+        {
+          "label": "󰍬",
+          "command": "amixer set Capture toggle"
+        },
+        {
           "label": "",
           "command": "nm-connection-editor"
         },
@@ -75,9 +83,10 @@
           "command": "blueman-manager"
         },
         {
-          "label": "",
+          "label": "󰏘",
           "command": "nwg-look"
         }
+        
       ]
     }
   }
