@@ -4,6 +4,10 @@
   Dot files for my Fedora with Hyprland
 </h2>
 
+<h3 align="center">
+  A concise and astonishing config
+</h3>
+
 <h4 align="center">
   <a href="https://github.com/zDyanTB/HyprNova/blob/master/documentation.md">Check out the documentation!</a><br><br>
   
