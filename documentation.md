@@ -50,7 +50,22 @@
 
 <details>
 <summary> Swaync </summary>
-  Notifications theme go on swaync/themes/`theme`/notifications.css
+
+  In order to make the blur work properly, you need to add these to your `hyprland.conf`
+  ```console
+
+layerrule = blur, swaync-control-center
+layerrule = blur, swaync-notification-window
+
+layerrule = ignorezero, swaync-control-center
+layerrule = ignorezero, swaync-notification-window
+
+layerrule = ignorealpha 0.5, swaync-control-center
+layerrule = ignorealpha 0.5, swaync-notification-window
+  ```
+
+  
+  Notifications theme go on swaync/themes/`theme`/notifications.css <br>
   Control center theme go on swaync/themes/`theme`/control_center.css
 
 </details>
