@@ -83,9 +83,10 @@
 # TODO
 
 - [ ] Adapt hyprlock theming to fit the wallpaper
+- [ ] Adapt swaync icons
 - [ ] Do spicetify live update
 - [ ] Create discord dynamic color
-- [ ] Switch to hylock-idle
+- [ ] Switch to hypr-idle
 - [ ] Add the rest of keybinds
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
 - [x] Tweak swaync theme
