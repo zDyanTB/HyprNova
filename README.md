@@ -86,9 +86,9 @@
 - [ ] Adapt swaync icons
 - [ ] Do spicetify live update
 - [ ] Create discord dynamic color
-- [ ] Switch to hypr-idle
 - [ ] Add the rest of keybinds
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
+- [x] Switch to hypr-idle
 - [x] Tweak swaync theme
 - [x] Add hyprlock dot files
 - [x] Make wallpaperSelect.sh recursive (look into subdirectories)
