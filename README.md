@@ -1,6 +1,7 @@
 <h2 align="center">
   <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/src/nova-banner.png" alt="Logo"/><br><br>
 
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Gem%20Stone.webp" alt="Gem Stone" width="25" height="25" />
   Dot files for my Fedora with Hyprland
 </h2>
 
