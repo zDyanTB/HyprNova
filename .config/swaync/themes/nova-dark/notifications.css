@@ -99,3 +99,13 @@
   background-color: @selected;
   color: @background;
 }
+
+.notification.critical progress {
+  background-color: @selected;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: @selected;
+}
+
