@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # wlogout (Power, Screen Lock, Suspend, etc)
 
 # Set variables for parameters

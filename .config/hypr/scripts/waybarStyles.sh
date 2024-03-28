@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Thanks https://github.com/JaKooLit ! #
 # Script for waybar styles
 

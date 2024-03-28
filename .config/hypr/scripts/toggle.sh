@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 icons="$HOME/.config/swaync/icons"
 scripts_dir="$HOME/.config/hypr/scripts"
