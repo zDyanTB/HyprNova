@@ -66,7 +66,7 @@ inputbar {
     border-radius:               30px;
     orientation:                 horizontal;
     children:                    [ "entry" ];
-    background-image:            url("~/.config/rofi/.current_wallpaper", width);
+    background-image:            url("~/.current_wallpaper", width);
 }
 
 /* ---- Entry input ---- */

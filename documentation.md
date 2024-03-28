@@ -33,7 +33,7 @@
 
   To use your wallpaper, you need to specify the path as well:
 
-  In `rofi/` create a symlink to the wallpaper and name it `.current_wallpaper`.
+  In your `$HOME` create a symlink to the wallpaper and name it `.current_wallpaper`.
   
   
   ---

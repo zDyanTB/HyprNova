@@ -65,7 +65,7 @@ img {
     margin:                     10px;
     background-color:           transparent;
     border-radius:              26px;
-    background-image:           url("~/.config/rofi/.current_wallpaper", height);
+    background-image:           url("~/.current_wallpaper", height);
     orientation:                horizontal;
 }
 

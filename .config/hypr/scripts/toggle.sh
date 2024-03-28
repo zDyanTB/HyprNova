@@ -54,7 +54,7 @@ toggle_blur
         return 0
     else
         sleep 0.2
-        swww init && swww img "$HOME/.config/rofi/.current_wallpaper"
+        swww init && swww img "$HOME/.current_wallpaper"
         sleep 0.2
         "${scripts_dir}/pywalSwww.sh"
         sleep 0.2

@@ -22,7 +22,7 @@ for output in "${monitor_outputs[@]}"; do
         wallpaper_path=$(cat "$cache_file")
 
         # Copy the wallpaper to the location Rofi can access
-        if ln -sf "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"; then
+        if ln -sf "$wallpaper_path" "$HOME/.current_wallpaper"; then
             ln_success=true  # Set the flag to true upon successful execution
         fi
 
