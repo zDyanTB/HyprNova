@@ -2,18 +2,15 @@
 ## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # This script for selecting wallpapers (SUPER W)
 
-# Scripts Path
-scriptsDir="$HOME/.config/hypr/scripts"
-
 # Wallpapers Path
 wallpaperDir="$HOME/Pictures/wallpapers"
 themesDir="$HOME/.config/rofi/themes"
 
 # Transition config
 FPS=60
-TYPE="center"
+TYPE="any"
 DURATION=2
-BEZIER=".43,1.19,1,.4"
+BEZIER="0.6,0.08,1.0,0.55"
 SWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
 
 # Check if swaybg is running
@@ -45,6 +42,8 @@ executeCommand() {
     echo "Neither swww nor swaybg are installed."
     exit 1
   fi
+
+  ln -sf "$1" "$HOME/.current_wallpaper"
 }
 
 # Show the images
@@ -93,7 +92,6 @@ main() {
     fi
   done
 
-
   # Check the file and execute
   if [[ -n "$selectedFile" ]]; then
     executeCommand "${selectedFile}"
@@ -102,6 +100,7 @@ main() {
     echo "Image not found."
     exit 1
   fi
+
 }
 
 # Check if rofi is already running
@@ -114,6 +113,6 @@ main
 
 # Sleep to work properly
 sleep 0.2
-"${scriptsDir}"/pywalSwww.sh
+./pywal.sh
 sleep 0.2
-"${scriptsDir}"/refresh.sh
+./refresh.sh
