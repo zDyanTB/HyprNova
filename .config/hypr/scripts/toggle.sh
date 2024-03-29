@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 icons="$HOME/.config/swaync/icons"
-scripts_dir="$HOME/.config/hypr/scripts"
 
 toggle_animations(){
     animations=$(hyprctl -j getoption animations:enabled | jq ".int")
@@ -56,9 +55,9 @@ toggle_blur
         sleep 0.2
         swww init && swww img "$HOME/.current_wallpaper"
         sleep 0.2
-        "${scripts_dir}/pywalSwww.sh"
+        ./pywal.sh
         sleep 0.2
-        "${scripts_dir}/refresh.sh"
+        ./refresh.sh
         notify-send -e -u normal -i "${icons}/gamemode.png" "Gamemode disabled"
         
         return 0
