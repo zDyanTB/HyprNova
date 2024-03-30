@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wallpaper_path=~/.current_wallpaper
+wallpaper_path=$(readlink "$HOME/.current_wallpaper")
 
 check_file() {
    
