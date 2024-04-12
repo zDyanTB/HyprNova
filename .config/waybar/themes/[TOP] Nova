@@ -42,6 +42,7 @@
 "custom/power": {
 	"format": " ",
 	"icon-size": 20,
+  "on-click": "wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400",
 	"tooltip": false,
 },
 	

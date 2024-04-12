@@ -12,7 +12,7 @@ font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 padding: 1px;
 }
 
-@import "../waybar/style/catppuccin-themes/mocha.css";
+@import "colors/catppuccin-themes/mocha.css";
 
 window#waybar {
   transition-property: background-color;
