@@ -17,12 +17,6 @@
     "keybind" : "e"
 }
 {
-    "label" : "suspend",
-    "action" : "swaylock -f && systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
-}
-{
     "label" : "hibernate",
     "action" : "swaylock -f && systemctl hibernate",
     "text" : "Hibernate",
@@ -30,7 +24,7 @@
 }
 {
     "label" : "lock",
-    "action" : "$HOME/.config/hypr/scripts/LockScreen.sh",
+    "action" : "hyprlock",
     "text" : "Lock",
     "keybind" : "l"
 }
