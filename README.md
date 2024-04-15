@@ -18,6 +18,9 @@
 >   [!Caution]
 >   Requires [pywal](https://github.com/dylanaraps/pywal) to work
 
+>   [!Important]
+>   1.0 Coming!
+
 # Features
   -  [W.I.P] Fully dynamic colors
 
