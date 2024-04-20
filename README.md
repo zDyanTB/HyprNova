@@ -54,13 +54,13 @@
 
 ![Castle-shot](src/waybar/shot-castle.png)
 ![Castle-bar](src/waybar/bar-castle.png)
----
+
 ![Space-shot](src/waybar/shot-space.png)
 ![Space-bar](src/waybar/bar-space.png)
----
+
 ![Flower-shot](src/waybar/shot-flower.png)
 ![Flower-bar](src/waybar/bar-flower.png)
----
+
 </details>
 
 
@@ -81,6 +81,15 @@
 ![Shot3](src/swaync/shot-3.png)
 ![Shot4](src/swaync/shot-4.png)
 
+</details>
+
+<details>
+<summary> Wlogout </summary>
+  
+![green](src/wlogout/green.png)
+![green-hover](src/wlogout/green-hover.png)
+![blue](src/wlogout/blue.png)
+![blue](src/wlogout/blue-hover.png)
 
 </details>
 
