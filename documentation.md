@@ -70,45 +70,22 @@ layerrule = ignorealpha 0.5, swaync-notification-window
 
 </details>
 
-
 <details>
 <summary> Wlogout </summary>
 
-  How to change the layout?
+- How to blur Wlogout.
 
-  Choose your layout between vertical(6x1) and horizontal(3x2).
-  
-  ```console
-  ln -srf <layout>.css ~/.config/wlogout
-  ```
+     In your hyprland.conf (or windows-rules.conf), set
+      
+    for new versions    
+    ```console
+    layerrule = blur, logout_dialog
+    ```
 
-  There are two ways you can apply *blur* to Wlogout.
-  
-  * The simple way:
-     
-     In your hyprland.conf (or windowsrules.conf), set
+    ---
+    for old versions
     ```console
     layerrule = blur, gtk-layer-shell
     ```
-
-
-  * The 'hard' way:
-
-     In your wlogout/style.css, you can do
-     ```css  
-    window {
-      background-image: url("/tmp/shot_blurred.png");
-      background-repeat: no-repeat;
-      background-position: center;
-     ```  
-     And set up a script like
-    ```console
-    grim - | convert - -scale 2.5% -resize 4000% /tmp/shot_blurred.png
-    ```
-    using [grim](https://github.com/emersion/grim).
-
-    This way, whenever you open wlogout, it will take a screenshot and 'blur' it.  
-    I've tested and I noticed that it takes too much time to render, prefer method 1.
-
-  ---
+    
 </details>
