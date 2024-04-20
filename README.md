@@ -1,7 +1,5 @@
 <h2 align="center">
   <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/src/nova-banner.png" alt="Logo"/><br><br>
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Gem%20Stone.webp" alt="Gem Stone" width="25" height="25" />
   Dot files for my Fedora with Hyprland
 </h2>
 
@@ -22,35 +20,36 @@
 >   1.0 Coming!
 
 # Features
-  -  [W.I.P] Fully dynamic colors
+- Fully pywal integrated
 
 # Screenshots
 <details>
-<summary> Rofi </summary>
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Magnifying%20Glass%20Tilted%20Right.webp" alt="Magnifying Glass Tilted Right" width="32" height="32" />
+  Rofi
+</summary>
 
 <h4 align="center"> Menu </h4>
 
 ![Space-menu](src/rofi/space-menu.png)
-
 ![Flower-menu](src/rofi/flower-menu.png)  
-
 ![Eye-menu](src/rofi/eye-menu.png)
-
 
 <h4 align="center"> Waybar Layouts </h4>
 
 ![Space-layout](src/rofi/space-layout.png)
 
-
 <h4 align="center"> Wallpaper Selector </h4>
 
 ![Wallpapers](src/rofi/wallpaper-select.png)
 
-
 </details>
 
 <details>
-<summary> Waybar </summary>
+<summary> 
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Sparkles" width="32" height="32" />
+  Waybar
+</summary>
 
 ![Castle-shot](src/waybar/shot-castle.png)
 ![Castle-bar](src/waybar/bar-castle.png)
@@ -65,7 +64,10 @@
 
 
 <details>
-<summary> Hyprlock </summary>
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Locked%20With%20Key.webp" alt="Locked With Key" width="32" height="32" />
+  Hyprlock
+</summary>
 
 ![Girl](src/hyprlock/girl.png)
 ![Seahorse](src/hyprlock/seahorse.png)
@@ -74,7 +76,11 @@
 </details>
 
 <details>
-<summary> Swaync </summary>
+  
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Light%20Bulb.webp" alt="Light Bulb" width="32" height="32" />
+  Swaync
+</summary>
 
 ![Shot1](src/swaync/shot-1.png)
 ![Shot2](src/swaync/shot-2.png)
@@ -84,7 +90,10 @@
 </details>
 
 <details>
-<summary> Wlogout </summary>
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Old%20Key.webp" alt="Old Key" width="32" height="32" />
+  Wlogout
+</summary>
   
 ![green](src/wlogout/green.png)
 ![green-hover](src/wlogout/green-hover.png)
@@ -97,18 +106,8 @@
 
 - [ ] Adapt hyprlock theming to fit the wallpaper
 - [ ] Adapt swaync icons
-- [ ] Do spicetify live update
-- [ ] Create discord dynamic color
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
-- [x] Add the rest of keybinds
-- [x] Switch to hypr-idle
-- [x] Tweak swaync theme
-- [x] Add hyprlock dot files
-- [x] Make wallpaperSelect.sh recursive (look into subdirectories)
-- [x] Add waybar dotfiles
-- [x] Improve rofi color scheme
-- [x] Adapt all rofi styles
-- [x] Change wlogout layout to 3x2
+- [ ] Tweak swaync mpris cover background
 
 # Thanks to
  - [JaKooLi](https://github.com/JaKooLit) for the scripts and dotfiles!
