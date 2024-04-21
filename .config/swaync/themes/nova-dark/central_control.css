@@ -1,8 +1,7 @@
 @define-color text            @foreground;
-@define-color background-alt  @color1;
-@define-color background-sec  @color5;
-@define-color selected        @color3;
-@define-color hover           alpha(@selected, .2);
+@define-color background-alt  alpha(@color1, .4);
+@define-color selected        @color6;
+@define-color hover           alpha(@selected, .4);
 @define-color urgent          @color2;
 
 * {
@@ -34,7 +33,7 @@
 /* Notifications  */
 .control-center .notification-row .notification-background,
 .control-center .notification-row .notification-background .notification.critical {
-  background-color: alpha(@background-sec, .2);
+  background-color: @background-alt;
   border-radius: 16px;
   margin: 4px 0px;
   padding: 4px;
@@ -136,7 +135,7 @@ progressbar {
 }
 
 .widget-title button {
-  background: alpha(@background-sec, .2);
+  background: @background-alt;
   border-radius: 6px;
   padding: 4px 16px;
 }
@@ -156,7 +155,7 @@ progressbar {
 }
 
 .widget-dnd > switch {
-  background: alpha(@background-sec, .2);
+  background: @background-alt;
   font-size: initial;
   border-radius: 8px;
   box-shadow: none;
@@ -186,7 +185,7 @@ progressbar {
   padding: 6px 2px;
   margin: 6px;
   border-radius: 12px;
-  background: alpha(@background-sec, .2);
+  background: @background-alt;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
@@ -203,7 +202,7 @@ progressbar {
 
   /* Music player */
 .widget-mpris {
-    background: alpha(@background-sec, .2);
+    background: @background-alt;
     border-radius: 16px;
     color: @text;
     margin:  20px 6px;
