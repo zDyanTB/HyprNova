@@ -82,7 +82,7 @@
   Swaync
 </summary>
 
-![Green](src/swaync/green.png)
+![White](src/swaync/white.png)
 ![Yellow](src/swaync/yellow.png)
 ![Purple](src/swaync/purple.png)
 
