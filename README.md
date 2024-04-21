@@ -70,8 +70,8 @@
 </summary>
 
 ![Girl](src/hyprlock/girl.png)
-![Seahorse](src/hyprlock/seahorse.png)
-![Space](src/hyprlock/space.png)
+![Oni](src/hyprlock/oni.png)
+![Army](src/hyprlock/army.png)
 
 </details>
 
