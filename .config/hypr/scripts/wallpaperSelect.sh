@@ -9,8 +9,8 @@ themesDir="$HOME/.config/rofi/themes"
 # Transition config
 FPS=60
 TYPE="any"
-DURATION=2
-BEZIER="0.6,0.08,1.0,0.55"
+DURATION=3
+BEZIER="0.4,0.2,0.4,1.0"
 SWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
 
 # Check if swaybg is running
@@ -19,7 +19,7 @@ if pidof swaybg > /dev/null; then
 fi
 
 # Retrieve image files as a list
-PICS=($(find "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \)))
+PICS=($(find "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \) | sort ))
 
 # Use date variable to increase randomness
 randomNumber=$(( ($(date +%s) + RANDOM) + $$ ))
@@ -111,8 +111,3 @@ fi
 
 main
 
-# Sleep to work properly
-sleep 0.2
-./pywal.sh
-sleep 0.2
-./refresh.sh

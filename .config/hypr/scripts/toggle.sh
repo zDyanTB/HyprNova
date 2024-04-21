@@ -59,7 +59,6 @@ toggle_blur
         sleep 0.2
         ./refresh.sh
         notify-send -e -u normal -i "${icons}/gamemode.png" "Gamemode disabled"
-        hyprctl reload
         
         return 0
     fi

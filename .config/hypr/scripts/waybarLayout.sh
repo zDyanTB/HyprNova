@@ -8,7 +8,6 @@ IFS=$'\n\t'
 # Define directories
 waybar_themes="$HOME/.config/waybar/themes"
 waybar_config="$HOME/.config/waybar/config"
-scriptsDir="$HOME/.config/hypr/scripts"
 rofi_config="$HOME/.config/rofi/themes/waybar-layout.rasi"
 
 # Function to display menu options
@@ -33,7 +32,7 @@ restart_waybar_if_needed() {
         pkill waybar
         sleep 0.1  # Delay for Waybar to completely terminate
     fi
-    "${scriptsDir}/refresh.sh" &
+    ./refresh.sh &
 }
 
 # Main function
