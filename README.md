@@ -109,6 +109,13 @@
 - [ ] Adapt rofi and pywal colors when using animated images as wallpapers
 - [ ] Tweak swaync mpris cover background
 
+# Progress
+- [ ] Hyprland Env
+- [ ] Rofi
+- [ ] Swaync
+- [x] Wlogout
+
+
 # Thanks to
  - [JaKooLi](https://github.com/JaKooLit) for the scripts and dotfiles!
  - [adi1090x](https://github.com/adi1090x/rofi) themes ideias!
