@@ -82,10 +82,9 @@
   Swaync
 </summary>
 
-![Shot1](src/swaync/shot-1.png)
-![Shot2](src/swaync/shot-2.png)
-![Shot3](src/swaync/shot-3.png)
-![Shot4](src/swaync/shot-4.png)
+![Green](src/swaync/green.png)
+![Yellow](src/swaync/yellow.png)
+![Purple](src/swaync/purple.png)
 
 </details>
 
