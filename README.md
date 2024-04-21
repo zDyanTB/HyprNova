@@ -109,9 +109,10 @@
 - [ ] Tweak swaync mpris cover background
 
 # Progress
-- [ ] Hyprland Env
+- [x] Hyprland Env
 - [ ] Rofi
-- [ ] Swaync
+- [x] Waybar
+- [x] Swaync
 - [x] Wlogout
 
 
