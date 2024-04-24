@@ -103,10 +103,8 @@
 
 # TODO
 
-- [ ] Adapt hyprlock theming to fit the wallpaper
-- [ ] Adapt swaync icons
-- [ ] Adapt rofi and pywal colors when using animated images as wallpapers
 - [ ] Tweak swaync mpris cover background
+- [ ] Tweak rofi theme
 
 # Progress
 - [x] Hyprland
