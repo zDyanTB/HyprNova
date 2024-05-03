@@ -1,0 +1,85 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    background-alt:              @selected-active-background; // Buttons background
+    selected:                    @selected-normal-background; // Button selected
+    active:                      @selected-urgent-background; // Window activated
+    urgent:                      @selected-normal-background; // When hovering the activated window (maybe more?)
+
+    text-selected:               @background;
+    text:                        @foreground;
+
+    white-shadow:                white / 6%;
+    white-bg:                    white / 12%;
+    white-border:                white / 24%;
+}
+
+window {
+    fullscreen:                  false;
+    transparency:                "real";
+    cursor:                      "default";
+    background-color:            black / 6%;
+}
+
+
+
+/* Elements ----------------------------------------------------- */
+element normal.normal,
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  @text;
+}
+
+element selected.normal {
+    background-color:            @white-bg;
+    text-color:                  white;
+    border:                      1px solid;
+    border-color:                @selected;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+/* Listview ---------------------------------------------------- */
+
+listview {
+  border:                        0px;
+}
+
+/* Scrollbar ---------------------------------------------------- */
+scrollbar {
+    margin:                      0px 4px;
+    handle-width:                8px;
+    handle-color:                white;
+    background-color:            @white-shadow;
+    border-radius:               4px;
+}
+
+/* Message ------------------------------------------------------ */
+message {
+    background-color:            @white-bg;
+    border:                      1px solid;
+    border-color:                @white-border;
+    border-radius:               12px;
+    padding:                     24px;
+}
+error-message {
+    padding:                     100px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            black / 10%;
+    text-color:                  @text;
+}
+textbox {
+    background-color:            transparent;
+    text-color:                  @text;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    highlight:                   none;
+}
