@@ -16,11 +16,17 @@
 >   [!Caution]
 >   Requires [pywal](https://github.com/dylanaraps/pywal) to work
 
->   [!Important]
->   1.0 Coming!
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+	1.0 is Out!
+	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+</h3>
 
 # Features
 - Fully pywal integrated
+- All-in-one setup
+- Easy to use
+- Concise
 
 # Screenshots
 <details>
@@ -106,12 +112,13 @@
 # TODO
 
 - [ ] Tweak swaync mpris cover background
-- [ ] Tweak rofi theme
+- [ ] Branch old rofi
+- [x] Tweak rofi theme
 
 # Progress
 - [x] Hyprland
 - [x] Hyprlock
-- [ ] Rofi
+- [X] Rofi
 - [x] Waybar
 - [x] Swaync
 - [x] Wlogout
