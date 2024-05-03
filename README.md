@@ -25,29 +25,31 @@
 # Screenshots
 <details>
 <summary>
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Magnifying%20Glass%20Tilted%20Right.webp" alt="Magnifying Glass Tilted Right" width="32" height="32" />
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Artist%20Palette.webp" alt="Artist Palette" width="32" height="32" />
   Rofi
 </summary>
 
 <h4 align="center"> Menu </h4>
 
-![Space-menu](src/rofi/space-menu.png)
-![Flower-menu](src/rofi/flower-menu.png)  
-![Eye-menu](src/rofi/eye-menu.png)
+![Launcher](src/rofi/launcher.png)
 
-<h4 align="center"> Waybar Layouts </h4>
+<h4 align="center"> Waybar Changer </h4>
 
-![Space-layout](src/rofi/space-layout.png)
+![Waybar](src/rofi/waybar-changer.png)
 
 <h4 align="center"> Wallpaper Selector </h4>
 
-![Wallpapers](src/rofi/wallpaper-select.png)
+![Wallpapers](src/rofi/wallpaper-selector.png)
+
+<h4 align="center"> Wallpaper Selector </h4>
+
+![Clipboard](src/rofi/clipboard.png)
 
 </details>
 
 <details>
 <summary> 
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Sparkles" width="32" height="32" />
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Travel%20and%20Places/Compass.webp" alt="Compass" width="32" height="32" />
   Waybar
 </summary>
 
