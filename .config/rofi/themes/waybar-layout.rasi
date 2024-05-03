@@ -35,7 +35,7 @@ listbox {
     spacing:                     20px;
     background-color:            transparent;
     orientation:                 vertical;
-    children:                    [ "entry", "message", "listview" ];
+    children:                    [ "inputbar", "message", "listview" ];
 }
 
 /* Listview ---------------------------------------- */
@@ -61,17 +61,35 @@ img {
     background-image:           url("~/.current_wallpaper", height);
 }
 
+/* Inputbar ---------------------------------------------- */
+inputbar {
+    children:                    [ "textbox-icon", "entry" ];
+
+    border-radius:               12px;
+    background-color:            @shade-bg;
+    text-color:                  @text;
+
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     14px;
+}
+
+textbox-icon {
+    expand:                      false;
+    background-color:            transparent;
+    text-color:                  inherit;
+    str: "  ";
+}
+
 /* Entry ----------------------------------------------- */
 entry {
     cursor:                     text;
     expand:                     false;
     placeholder-color:          inherit;
-    placeholder:                " Select Waybar color-scheme";
+    placeholder:                "Select Waybar layout";
 
-    padding:                    12px;
-    border-radius:              14px;
-    background-color:           @white-bg;
-    text-color:                 @text;
+    background-color:           transparent;
+    text-color:                 inherit;
 }
 
 /* ---- Elements ---- */

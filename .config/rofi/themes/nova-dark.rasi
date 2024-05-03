@@ -37,7 +37,7 @@ inputbar {
     children:                    [ "prompt", "entry" ];
 
     border-radius:               12px;
-    background-color:            @white-bg;
+    background-color:            @shade-bg;
     text-color:                  @text;
 
     spacing:                     12px;
@@ -99,12 +99,12 @@ mode-switcher{
 button {
     padding:                     12px 0px;
     border-radius:               12px;
-    background-color:            @white-shadow;
+    background-color:            @shade-shadow;
     text-color:                  @text;
     cursor:                      pointer;
 }
 button selected {
-    background-color:            @white-bg;
+    background-color:            @shade-bg;
     border:                      1px solid;
     border-color:                @selected;
     text-color:                  white;

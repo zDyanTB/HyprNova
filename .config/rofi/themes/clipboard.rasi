@@ -32,7 +32,7 @@ mainbox {
 
 /* Inputbar --------------------------------------------------- */
 inputbar {
-    children:                    [ "entry" ];
+    children:                    [ "dummy", "entry", "dummy" ];
     border-radius:               24px;
 
     spacing:                     0px;
@@ -41,26 +41,38 @@ inputbar {
     background-image:            url("~/.current_wallpaper", width);
 }
 
+dummy {
+  background-color: transparent;
+}
+
 textbox-help {
     expand: false;
     content: " [CTRL DEL]  Delete \n [ALT DEL]   Wipe";
 
     border-radius:                 12px;
-    background-color:              @white-bg;
+    background-color:              @shade-bg;
     text-color:                    white;
 
     margin:                        0px;
     padding:                       6px;
 }
 
+textbox-icon {
+    expand:                      true;
+    background-color:            transparent;
+    text-color:                  inherit;
+    margin: 0px 0px 0px 25px;
+    content: "  ";
+}
+
 /* Entry input ------------------------------------------------ */
 entry {
     cursor:                      inherit;
-    placeholder:                 " ";
+    placeholder:                 "Search";
     placeholder-color:           inherit;
 
     border-radius:               12px;
-    background-color:            black / 24%;
+    background-color:            black / 48%;
     text-color:                  @text;
 
     padding:                     16px;
