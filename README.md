@@ -1,5 +1,5 @@
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/src/nova-banner.png" alt="Logo"/><br><br>
+  <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/.github/nova-banner.png" alt="Logo"/><br><br>
   Dot files for my Fedora with Hyprland
 </h2>
 
@@ -37,19 +37,19 @@
 
 <h4 align="center"> Menu </h4>
 
-![Launcher](src/rofi/launcher.png)
+![Launcher](.github/rofi/launcher.png)
 
 <h4 align="center"> Waybar Changer </h4>
 
-![Waybar](src/rofi/waybar-changer.png)
+![Waybar](.github/rofi/waybar-changer.png)
 
 <h4 align="center"> Wallpaper Selector </h4>
 
-![Wallpapers](src/rofi/wallpaper-selector.png)
+![Wallpapers](.github/rofi/wallpaper-selector.png)
 
 <h4 align="center"> Wallpaper Selector </h4>
 
-![Clipboard](src/rofi/clipboard.png)
+![Clipboard](.github/rofi/clipboard.png)
 
 </details>
 
@@ -59,14 +59,14 @@
   Waybar
 </summary>
 
-![Castle-shot](src/waybar/shot-castle.png)
-![Castle-bar](src/waybar/bar-castle.png)
+![Castle-shot](.github/waybar/shot-castle.png)
+![Castle-bar](.github/waybar/bar-castle.png)
 
-![Space-shot](src/waybar/shot-space.png)
-![Space-bar](src/waybar/bar-space.png)
+![Space-shot](.github/waybar/shot-space.png)
+![Space-bar](.github/waybar/bar-space.png)
 
-![Flower-shot](src/waybar/shot-flower.png)
-![Flower-bar](src/waybar/bar-flower.png)
+![Flower-shot](.github/waybar/shot-flower.png)
+![Flower-bar](.github/waybar/bar-flower.png)
 
 </details>
 
@@ -77,9 +77,9 @@
   Hyprlock
 </summary>
 
-![Girl](src/hyprlock/girl.png)
-![Oni](src/hyprlock/oni.png)
-![Army](src/hyprlock/army.png)
+![Blue](.github/hyprlock/blue.png)
+![Red](.github/hyprlock/red.png)
+![Grey](.github/hyprlock/grey.png)
 
 </details>
 
@@ -90,9 +90,9 @@
   Swaync
 </summary>
 
-![White](src/swaync/white.png)
-![Yellow](src/swaync/yellow.png)
-![Purple](src/swaync/purple.png)
+![White](.github/swaync/white.png)
+![Yellow](.github/swaync/yellow.png)
+![Purple](.github/swaync/purple.png)
 
 </details>
 
@@ -102,18 +102,18 @@
   Wlogout
 </summary>
   
-![green](src/wlogout/green.png)
-![green-hover](src/wlogout/green-hover.png)
-![blue](src/wlogout/blue.png)
-![blue](src/wlogout/blue-hover.png)
+![green](.github/wlogout/green.png)
+![green-hover](.github/wlogout/green-hover.png)
+![blue](.github/wlogout/blue.png)
+![blue](.github/wlogout/blue-hover.png)
 
 </details>
 
 # TODO
 
+- [ ] Switch to Matugen (or Wallust)
 - [ ] Tweak swaync mpris cover background
 - [ ] Branch old rofi
-- [x] Tweak rofi theme
 
 # Progress
 - [x] Hyprland
