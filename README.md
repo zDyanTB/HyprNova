@@ -1,6 +1,6 @@
 <h2 align="center">
   <img src="https://raw.githubusercontent.com/zDyanTB/HyprNova/master/.github/nova-banner.png" alt="Logo"/><br><br>
-  Dot files for my Fedora with Hyprland
+  HyprNova for Hyprland
 </h2>
 
 <h3 align="center">
