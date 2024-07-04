@@ -47,7 +47,7 @@
 
 ![Wallpapers](.github/rofi/wallpaper-selector.png)
 
-<h4 align="center"> Wallpaper Selector </h4>
+<h4 align="center"> Clipboard </h4>
 
 ![Clipboard](.github/rofi/clipboard.png)
 
