@@ -1,16 +1,16 @@
-/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
-/* pywal-wlogout */
+/* Importing matugen colors */
 
-/* Importing pywal colors */
+@import 'colors.css';
 
-@import '../../.cache/wal/colors-waybar.css';
+* {
+  all: unset;
+}
 
 window {
-    font-family: Fira Code Medium;
-    font-size: 16pt;
-    color:  @foreground; /* text */
-    background-color: rgba(24, 27, 32, 0.2);
-
+    /* font-family: Geist Mono; */
+    font-size: 1.8rem;
+    color: rgba(255,255,255,.8); /* text */
+    background-color: rgba(24, 27, 32, 0.1);
 } 
 
 button {
@@ -23,19 +23,16 @@ button {
     box-shadow: 0 0 10px 2px transparent;
     border-radius: 36px;
     margin: 10px;
-}
-
-button:focus {
-    box-shadow: none;
-    background-size : 20%;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 button:hover {
     background-size: 50%;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,.4);
-    background-color: @color6;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.2);
     color: transparent;
     transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
+    background-color: @primary;
 }
 
 #shutdown {
