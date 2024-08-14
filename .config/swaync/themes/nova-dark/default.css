@@ -1,0 +1,84 @@
+@import "../../colors.css";
+@define-color text-color       @on_surface;
+@define-color background-color @surface;
+@define-color surface-color    alpha(@primary, .26);
+@define-color accent-color     @primary;
+@define-color on-accent-color  @on_primary;
+@define-color secondary-color  @secondary;
+@define-color hover-color      alpha(@secondary, .4);
+@define-color error-color      @error;
+
+* {
+  color: @text-color;
+
+  all: unset;
+  font-size: 1rem;
+  /* font-family: "JetBrains Mono Nerd Font 10"; */
+  transition: 260ms ease;
+
+}
+
+/* Avoid 'annoying' backgroud */
+.blank-window {  
+  background-color: transparent;  
+}
+
+.body {
+  font-size: 0.86rem;
+}
+
+.summary {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.image {
+  margin: 10px 16px 10px 0px;
+  border-radius: 8px;
+}
+
+progressbar,
+progress,
+trough {
+  border-radius: 12px;
+}
+
+progressbar {
+  background-color: @surface-color;
+}
+
+/* Buttons ------------------------------------------------------------------------------------------------- */
+
+.close-button {
+  background-color: alpha(@secondary-color, .2);
+  border-radius: 100%;
+  color: @secondary-color;
+  margin: 6px 2px;
+  padding: 4px;
+  transition: all 100ms ease;
+}
+
+.close-button:hover {
+  background-color: @accent-color;
+  color: @on-accent-color;
+}
+
+.close-button:active {
+  background-color: @accent-color;
+}
+
+.notification-action {
+  background-color: @accent-color;
+  color: @on-accent-color;
+  font-weight: bold;
+  border-radius: 12px;
+  margin: 6px;
+}
+
+.notification-action:hover {
+  background-color: @hover-color;
+}
+
+.notification-action:active {
+  background-color: @accent-color;
+}
