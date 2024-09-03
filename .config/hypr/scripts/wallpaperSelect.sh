@@ -19,7 +19,7 @@ if pidof swaybg > /dev/null; then
 fi
 
 # Retrieve image files as a list
-PICS=($(find "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \) | sort ))
+PICS=($(find -L "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \) | sort ))
 
 # Use date variable to increase randomness
 randomNumber=$(( ($(date +%s) + RANDOM) + $$ ))
