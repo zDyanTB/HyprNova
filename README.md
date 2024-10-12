@@ -125,5 +125,5 @@
 
 
 # Thanks to
- - [JaKooLi](https://github.com/JaKooLit) for the scripts and dotfiles!
+ - [JaKooLit](https://github.com/JaKooLit) for the scripts and dotfiles!
  - [adi1090x](https://github.com/adi1090x/rofi) themes ideias!
